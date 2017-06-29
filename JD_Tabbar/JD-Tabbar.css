@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+	-webkit-font-smoothing: antialiased;
+}
+
+.topbar {
+	background-color: #f1f1f1;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+}
+
+.z-arrow {display: inline-block;}
+
+.wrapper {
+	
+	margin: 0 auto;
+}
+
+.location-wrapper {
+	display: inline-block;
+	position: relative;
+}
+
+.location-wrapper .dirction {
+	position: relative;
+	display: inline-block;
+	font-size: 1em;
+	line-height: 30px;
+	padding: 0px 10px;
+	left: 40px;
+}
+
+.location-wrapper .dirction:hover {
+	background: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.location-wrapper:hover .clearfix {
+	display: block;
+}
+
+.location-wrapper:hover .z-arrow {
+	transform: rotate(180deg);
+	transition: transform 0.1s;
+	position: relative;
+	top: 2px;
+}
+
+.location-wrapper:hover:after {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 1px;
+	left: 41px;
+	right: -39px;
+	background: white;
+	box-sizing: border-box;
+}
+
+.location-wrapper .clearfix {
+	border: 1px solid #ddd;
+	position: absolute;
+	left: 40px;
+	width: 240px;
+	display: none;
+}
+
+.location-wrapper .clearfix li {
+	float: left;
+	display: inline-block;
+	width: 40px;
+	margin: 5px 8px;
+	padding: 0px 2px;
+	text-align: center;
+}
+
+.location-wrapper .clearfix .selected {
+	background-color: red;
+	color: white;
+}
+
+.location li:hover{
+	background: #f4f4f4;
+	color: #c81623;
+}
+
+.wrapper .links {
+	display: inline-block;
+	float: right;
+}
+
+.links li {
+	float: left;
+	padding: 0px 7px;
+	margin: 0px 1px;
+	line-height: 30px; 
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	position: relative;
+}
+
+.links li a {
+	color: #666;
+}
+
+.links li a:hover {
+	color: #c81623;
+}
+
+.links .hasarrow:hover {
+	background: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.links .hasarrow:hover .z-arrow {
+	transform: rotate(180deg);
+	transition: transform 0.1s;
+	position: relative;
+	top: 2px;
+}
+
+.links .hasarrow:hover:after {
+	content: "";
+	display: block;
+	height: 1px;
+	left: 1px;
+	right: 1px;
+	position: absolute;
+	background: white;
+	box-sizing: border-box;
+}
+
+.links .split {
+	width: 1px;
+	height: 12px;
+	margin-top: 9px;
+	padding: 0;
+	background: #ddd;
+	border: none;
+}

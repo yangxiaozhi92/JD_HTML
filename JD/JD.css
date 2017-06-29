@@ -1,0 +1,242 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+}
+
+body {min-height: 1000px;}
+
+.tabbar {
+	width: 100%;
+	height: 30px;
+	background: #f1f1f1;
+	line-height: 30px;
+	color: #666;
+	position: relative;
+}
+
+.z-arrow {display: inline-block;}
+
+.tabbar .position {
+	margin: 0px auto;
+	padding: 0px 20px;
+	display: inline-block;
+	position: relative;
+}
+
+.position .position-target {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px 10px;
+	line-height: 30px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+}
+
+.position:hover .position-target {
+	background: white;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.position:hover .z-arrow {
+	transform: rotate(180deg);
+	transition: transform 0.1s;
+	position: relative;
+	top: 2px;
+}
+
+.position:hover:after {
+	content: "";
+	height: 5px;
+	left: 21px;
+	right: 21px;
+	bottom: -2px;
+	position: absolute;
+	background: white;
+	box-sizing: border-box;
+	z-index: 99;
+}
+
+.position:hover .position-all {
+	display: block;
+}
+
+.tabbar .position-all {
+	width: 240px;
+	height: auto;
+	padding: 10px 10px;
+	border: 1px solid #ddd;
+	position: absolute;
+	display: none;
+	z-index: 99;
+	background: white;
+}
+
+.tabbar .position-all li {
+	float: left;
+	display: inline-block;
+	width: 40px;
+	margin: 5px 8px;
+	padding: 0px 2px;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.position-all li:hover {
+	background: #f4f4f4;
+	color: #c81623;
+}
+
+.position-all .selected {
+	background-color: red;
+	color: white;
+}
+
+.tabbar .links {
+	float: right;
+	display: inline-block;
+}
+
+.links li {
+	float: left;
+	margin: 0px 1px;
+	padding: 0px 7px;
+	line-height: 30px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	position: relative;
+	display: inline-block;
+}
+
+.links li a:link, .links li a:visited {
+	color: #666;
+}
+
+.links li a:hover{
+	color: #c81623;
+}
+
+.links .hasarrow:hover {
+	background: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.links .hasarrow:hover .z-arrow {
+	transform: rotate(180deg);
+	transition: transform 0.1s;
+	position: relative;
+	top: 2px;
+}
+
+.links .hasarrow:hover:after {
+	content: "";
+	display: block;
+	height: 1px;
+	left: 1px;
+	right: 1px;
+	position: absolute;
+	background: white;
+	box-sizing: border-box;
+}
+
+.links .split {
+	width: 1px;
+	height: 12px;
+	margin-top: 9px;
+	padding: 0;
+	background: #ddd;
+	border: none;
+}
+
+.top-ad {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 80px;
+	background-color: #ffd600;
+	visibility: visible;
+}
+
+.top-ad a {
+	display: inline-block;
+	width: 1200px;
+}
+
+.top-ad .top-ad-pic {
+	height: 80px;
+    background-image: url(https://img11.360buyimg.com/da/jfs/t2842/233/1418633238/139358/77ccf8c0/573ed396Nc60afd05.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top-ad .close-btn {
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	width: 19px;
+	height: 19px;
+	background: url(https://img11.360buyimg.com/da/jfs/t1000/283/179661858/1201/c7c60274/5507956eN735de046.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.logo-search-cart {
+	margin: 19px auto 15px auto;
+	display: inline-block;
+}
+
+.logo-search-cart .logo, .search, .cart {
+	display: inline-block;
+}
+
+.search {
+	position: relative;
+	margin: 5px 100px 0px 90px;
+}
+
+.search input {
+	width: 446px;
+	height: 24px;
+	padding: 4px;
+	line-height: 24px;
+	border: 2px solid #c81623;
+	font-size: 14px;
+	font-family: "microsoft yahei";
+	color: rgb(153,153,153);
+	vertical-align: top;
+}
+
+.search>p>input:focus {
+	outline: none;
+}
+
+.search>p>button:focus {
+	outline: none;
+}
+
+.search>p>button {
+	width: 82px;
+	height: 36px;
+	line-height: 1;
+	background: #c81623;
+	color: #fff;
+	font-size: 16px;
+	font-family: "microsoft yahei";
+	cursor: pointer;
+	border: none;
+	vertical-align: top;
+}
+
+.hotword {
+	margin-top: 5px;
+}
+
+.hotword a {
+	margin-right: 10px;
+	color: #666;
+}
+
+
