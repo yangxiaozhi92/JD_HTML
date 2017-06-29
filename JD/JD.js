@@ -1,5 +1,6 @@
 var positions = ["上海","重庆","天津","河北","山西","河南","辽宁","吉林","黑龙江","浙江","江苏","山东","安徽","内蒙古","福建","湖北","湖南","广东","广西","江西","四川","海南","贵州","云南","西藏","陕西","甘肃","青海","宁夏","新疆","台湾","香港","澳门","钓鱼岛","海外"];
 var hotwords = ["免单","领免息券","多肉植物","抢机票","每50减20","和田玉","中老年女装","免费试用","沙滩鞋"];
+var menuLines = ["全部商品分类","服装城","美妆馆","超市","生鲜","全球购","闪购","团购","拍卖","金融"];
 
 function addPositionTarget(positions) {
 	var positionDiv = document.getElementsByClassName("position-all");
@@ -41,9 +42,28 @@ function addHotword(hotwords) {
 	}
 }
 
+// 添加menu-line
+function addMenuLine(menuLines) {
+	var menu = document.getElementsByClassName("menu-line");
+	for (var i = 0; i < menuLines.length; i++) {
+		var a_line = document.createElement("a");
+		a_line.href = "javascript:;";
+		a_line.innerHTML = menuLines[i];
+		if (i == 0) {
+			a_line.className = "all-menu";
+		} else {
+			a_line.className = "other";
+		}
+		menu[0].appendChild(a_line);
+	}
+}
+
 // 添加城市定位
 addPositionTarget(positions);
 
 // 添加热搜关键字
 addHotword(hotwords);
+
+// 添加menu-line
+addMenuLine(menuLines);
 
