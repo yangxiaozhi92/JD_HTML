@@ -24,7 +24,7 @@ function updatePosition(thisPosition) {
 // 关闭广告
 function closeAd(adClassName) {
 	var adDiv = document.getElementsByClassName(adClassName);
-	adDiv[0].style.visibility = "hidden";
+	adDiv[0].style.display = "none";
 }
 
 // 添加热搜关键字
