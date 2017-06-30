@@ -401,13 +401,27 @@ body {min-height: 1000px;}
 	font-size: 12px;
 }
 
-.categoryName:hover {
+.menu-list li:hover .categoryName {
 	background: #fff;
 	color: #b61d1d;
 }
 
-.categoryName:hover .z-arrow-right {
+.menu-list li:hover .categoryName>.z-arrow-right {
 	display: none;
+}
+
+.menu-list li:hover .category-content{
+	display: block;
+}
+
+.menu-list>li:hover:after{
+	content: "";
+	width: 3px;
+	top: 0px;
+	bottom: 1px;
+	left: 209px;
+	position: absolute;
+	background: white;
 }
 
 .categoryName .z-arrow-right {
@@ -415,3 +429,120 @@ body {min-height: 1000px;}
 	position: absolute;
 	left: 180px;
 }
+
+.category-content {
+	display: none;
+	position: absolute;
+	overflow: scroll;
+	width: 960px;
+	height: 460px;
+	top: 0px;
+	left: 210px;
+	background: #f7f7f7;
+	color: black;
+	border: 1px solid #b61d1d;
+	border-top: none;
+}
+
+.menu-left {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	width: 700px;
+}
+
+.menu-left-title {
+	margin: 20px 20px 10px 20px;
+}
+
+.menu-left-title a {
+	line-height: 24px;
+	font-size: 11px;
+	margin: 5px 5px;
+	padding: 0px 8px;
+	background: #7c7171;
+	color: white;
+	position: relative;
+	display: inline-block;
+}
+
+.menu-left-title a:hover {
+	background: #b61d1d;
+}
+
+.menu-left-title>a>i {
+	display: inline-block;
+	position: relative;
+	line-height: 24px;
+	top: 0px;
+	left: 8px;
+	right: 0px;
+	width: 24px;
+	background: rgb(51,51,51);
+	text-align: center;
+}
+
+.menu-left-list {
+	display: inline-block;
+	position: relative;
+	width: 700px;
+}
+
+.menu-left-list .menu-item {
+	display: inline-block;
+	position: relative;
+	margin-top: 5px;
+	margin-left: 20px;
+}
+
+.menu-item>a {
+	display: inline-block;
+	position: relative;
+	line-height: 15px;
+	text-align: right;
+	color: rgb(102,102,102);
+	font-weight: bold;
+	vertical-align: top;
+	padding: 5px 5px 5px 0px;
+	width: 66px;
+}
+
+.menu-item>a:hover {
+	color: #c81623;
+}
+
+.menu-item>a>i {
+	display: inline-block;
+	position: relative;
+	right: 0px;
+	left: 5px;
+	text-align: center;
+}
+
+.menu-item-content {
+	display: inline-block;
+	position: relative;
+	left: 20px;
+	width: 600px;
+	right: 20px;
+	border-bottom: 1px solid #eee;
+}
+
+.menu-item-content>li {
+	display: inline-block;
+}
+
+.menu-item-content>li>a {
+	color: rgb(102,102,102);
+	line-height: 16px;
+	padding: 0 7px;
+	margin: 8px 0;
+	display: inline-block;
+	border-left: 1px solid rgb(221,221,221);
+}
+
+.menu-item-content>li>a:hover {
+	color: #c81623;
+}
+
